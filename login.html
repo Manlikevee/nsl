@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
+    <body>
+        <header id="navbar" data-aos="fade-up">
+            <div class="container">
+                <div class="logo" onclick="window.location.href = 'index.html'">
+                    <img src="media/logo (2).png" alt=""> 
+                </div>
+    
+                <div class="links" id="middlelinks">
+                    <a href="dashboard.html" class="activated">Home</a>
+                    <a href="dashboard.html">About</a>
+                    <a href="">What We Do</a>
+                    <a href="">Contact Us</a>
+    
+                    <div class="hideme">
+                        <a href="login.html" class="blackboton">Login</a>
+             
+                    </div>
+    
+                </div>
+    
+                <div class="login getstarteds" onclick="window.location.href = 'login.html'">
+                    Login
+                </div>
+    
+                <div class="navtoggle" onclick="navtoggler()">
+    
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </div>
+            </div>
+    
+        </header>
+
+<style>
+    .links{
+        display: none;
+    }
+</style>
+        <div class="herosection loginpage" >
+            <div class="container">
+                <form action="" method="POST" style="
+            width:100%; height: 100%;">
+             
+    
+                <div class="logincontainer">
+                    <div class="loginbox">
+                        <div class="logo"  onclick="window.location.href = 'index.html'">
+                            <img src="media/logo (2).png" alt=""> 
+                        </div>
+                        <div class="logintitle">Welcome Please provide your Log In details. </div>
+    
+                        <div class="logincontent">
+    
+                            <div class="loginflex">
+                                <label for="">Email Address</label>
+                                <input type="email" name="username" id="id_username" placeholder="Enter Your Email Address">
+                            </div>
+    
+    
+                            <div class="loginflex">
+                                <label for="">Password</label>
+    
+                                <div class="ini">
+                                    <input type="password" name="password" id="loginpass" placeholder="*****"> <i id="eyes"
+                                        onclick="eyefunclogin()" class="fas fa-solid fa-eye fa-eye-slash"
+                                        style="color: #0c3730;"></i>
+                                </div>
+                            </div>
+                            <div class="forgot">
+                                <p>
+                                 <a href="withdraw.html">   Forgot Password </a>
+                         
+                                </p>
+                                <p>
+                                 |
+                                </p>
+                                <p>
+                                 <a href="transactiondetailgreen.html">Forgot User ID</a>
+                         
+                                </p>
+                         
+                             </div>
+    
+                            <div class="loginflex">
+                              <button type="submit">LOGIN</button>
+                            </div>
+
+                            <div class="logintitle">Don’t have an account? <a href="register.html">Create account</a> </div>
+                        </div>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+
+        
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="assets/script.js" async defer></script>
+    </body>
+</html>

@@ -1,0 +1,891 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+
+body, *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+   
+}
+
+:root {
+
+    /**
+     * colors
+     */
+  --main:  rgb(69 143 246);
+    --imperial-red_12: hsla(357, 86%, 57%, 0.12);
+    --pacific-blue_12: hsla(188, 78%, 41%, 0.12);
+    --davys-gray_12: hsla(210, 9%, 31%, 0.12);
+    --imperial-red: hsl(357, 86%, 57%);
+    --sonic-sliver: hsl(0, 0%, 47%);
+    --pacific-blue: hsl(188, 78%, 41%);
+    --blue-ryb_12: hsla(220, 100%, 50%, 0.12);
+    --space-cadet: hsl(220, 41%, 20%);
+    --eerie-black: hsl(214, 10%, 13%);
+    --davys-gray: hsl(210, 9%, 31%);
+    --emerald_12: hsla(144, 62%, 53%, 0.12);
+    --cool-gray: hsl(225, 11%, 59%);
+    --cultured: hsl(225, 20%, 96%);
+    --blue-ryb: hsl(220, 100%, 50%);
+    --black_08: hsla(0, 0%, 0%, 0.06);
+    --black_12: hsla(0, 0%, 0%, 0.12);
+    --coral_12: hsla(15, 100%, 65%, 0.12);
+    --sunglow: hsl(44, 100%, 61%);
+    --emerald: hsl(144, 62%, 53%);
+    --onyx-2: hsl(210, 10%, 23%);
+    --coral: hsl(15, 100%, 65%);
+    --white: hsl(0, 0%, 100%);
+    --onyx: hsl(207, 8%, 21%);
+  
+    /**
+     * typography
+     */
+  
+    --ff-vietnam:  "Poppins", sans-serif;
+  
+    --fs-1: 1.563rem;
+    --fs-2: 1.5rem;
+    --fs-3: 1.25rem;
+    --fs-4: 1.078rem;
+    --fs-5: 1rem;
+    --fs-6: 0.938rem;
+    --fs-7: 0.875rem;
+    --fs-8: 0.844rem;
+    --fs-9: 0.813rem;
+    --fs-10: 0.769rem;
+  
+    --fw-500: 500;
+    --fw-600: 600;
+  
+    /**
+     * transition
+     */
+  
+    --transition: 0.25s ease;
+    --cubic-out: cubic-bezier(0.45, 0.85, 0.5, 1);
+    --cubic-in: cubic-bezier(0.5, 0, 0.50, 0.95);
+  
+    /**
+     * radius
+     */
+  
+    --radius-6: 6px;
+  
+    /**
+     * shadow
+     */
+  
+    --shadow-1: 0 12px 20px hsla(210, 10%, 23%, 0.07);
+    --shadow-2: 0 2px 10px hsla(0, 0%, 0%, 0.04);
+    --shadow-3: 0 2px 20px var(--black_08);
+  
+  }
+  
+  
+
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+
+
+/* header */
+header{
+    z-index: 999999999;
+    transition: 0.25s ease;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+   
+}
+.container {
+    width: 1100px;
+    margin: auto;
+    padding: 14px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Jost:wght@300&display=swap');
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Acme', sans-serif;
+font-family: 'Jost', sans-serif;
+    gap: 5px;
+}
+
+.logo img{
+   height: 30px;
+   width: 100%;
+    object-fit: cover;
+}
+
+
+header {
+    width: 100%;
+    position: fixed;
+
+}
+
+.accordiondiv{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+}
+  
+marquee{
+
+
+}
+
+.powering{
+    margin-top: 60px;
+   
+
+
+color: #252525;
+text-align: center;
+font-family: Poppins;
+font-size: 27px;
+font-style: normal;
+font-weight: 600;
+line-height: 160%; /* 52.8px */
+}
+
+
+.smalltext{
+   padding-bottom: 30px;
+    color: #868686;
+text-align: center;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 175%; /* 31.5px */
+}
+
+
+
+.accordiondiv img{
+    width: 100%;
+    height: 30px;
+    object-fit: contain;
+}
+.herosection .container{
+    height: 100%;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    color: #34495e;
+    font-family: 'Poppins', sans-serif;
+font-size: 19px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.navactive{
+    backdrop-filter: blur(2px);
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 18px 0 rgba(0,0,0,.04);
+    z-index: 99999999999999;
+}
+
+.links {
+    display: flex;
+    gap: 28px;
+    text-decoration: none;
+}
+.links a{
+    text-decoration: none;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding: 5px;
+padding: 2px;
+border-radius: 0px;
+transition: 0.25s ease;
+border-bottom: 1px solid transparent;
+}
+
+.links .activated{
+    
+    border-bottom: 2px solid var(--main)
+}
+.login{
+    cursor: pointer;
+    border-radius: 6px;
+background: #151515;
+padding: 10px;
+width: 90px;
+text-align: center;
+color: black;
+transition: 0.5s;
+user-select: none;
+color: var(--cultured);
+border: 1px solid black;
+}
+.navtoggle{
+    user-select: none;
+    cursor: pointer;
+    display: none;
+    padding: 9px;
+    background-color: white;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.herosection{
+    background: #FFFCF0;
+}
+.herosection .container{
+    height: 100%;
+    padding-bottom: 0;
+    height: 100vh;
+}
+
+#navlinkovalay{
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.768);
+backdrop-filter: blur(3px);
+z-index: 999999999999999;
+}
+
+.navlinkactive{
+position: absolute;
+display: flex !important;
+flex-direction: column;
+top: 79px;
+border-radius: 9px;
+gap: 10px;
+
+right: 10px;
+background: var(--header-bg-color);
+color: var(--subtitle-color);
+width: 240px;
+text-align: center;
+z-index: 999999999999999999999999999;
+background-color: white;
+padding: 21px;
+box-shadow: 0 1px 0.625rem 0 hsla(210, 7%, 22%, .06), 0 0.125rem 0.25rem 0 hsla(210, 7%, 22%, .08);
+
+}
+
+#navbar{
+    background-color: white;
+z-index: 9999999999999999999999999999999999999999999999999999999999999;
+}
+.hideme{
+display: none;
+}
+
+
+.twosides{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+        display: flex;
+        gap: 30px;
+        height: 100%;
+    }
+    
+    .sidea{
+        width: 100%;
+        display: flex;
+     height: 100%;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .sideb{
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    justify-content: center;
+    }
+
+    .sideb img{
+        margin-top: 80px;
+        width: 100%;
+        height: 80%;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    
+    .login{
+        border-radius: 6px;
+    background: var(--main);
+    padding: 10px;
+    width: 90px;
+    text-align: center;
+    color: black;
+    transition: 0.5s;
+    color: white;
+    border: 1px solid  var(--main);
+    border-radius: 5px;
+background:  var(--main);
+color: #fff;
+    }
+
+    .login:hover{
+        background-color: rgb(17, 78, 165);
+    }
+    .topsection{
+        margin-top: 30px;
+        color: #151515;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.28;
+    }
+    .bottomsection{
+        color: #54535C;
+        font-family:'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-weight: 400;
+    line-height: normal;
+    }
+
+    
+    .gridboxes{
+            width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-auto-rows: 1fr;
+        grid-gap: 30px;
+        grid-gap: 30px;
+    }
+
+
+    @keyframes vicror{
+        0% {
+            transform: translateY(-5px);
+        }
+        50% {
+            transform: translateY(10px);
+        }
+        100% {
+            transform: translateY(-5px);
+        }
+    }  
+    
+    
+    .tinybox{
+        cursor: pointer;
+        display: flex;
+        gap: 20px;
+        padding: 30px;
+        width: 100%;
+        box-shadow: 14px 24px 72px 0px rgba(120, 120, 120, 0.1); 
+        border-radius: 10px;
+        transition: 0.5s
+    }
+
+    .tinybox:hover{
+        background-color: #084343;
+    }
+    .tinybox:hover .tinuboxbuttext{
+        color: #09ecec;
+    }
+    .tinyactive .tinuboxbuttext{
+color: #09ecec;
+    }
+
+    .tinyactive .tinyboxsmalltext{
+        color: var(--white);
+            }
+    .tinyactive{
+        background-color: #084343;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+.tinuboxbuttext{
+    color: var(--main);
+    text-align: left;
+    font-family: Poppins;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.tinytext{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tinyboxsmalltext{
+    color: #313131;
+    text-align: left;
+    font-family: Poppins;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%;
+
+}
+.trusted{
+    color: #313131;
+    text-align: left;
+    font-family: Poppins;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 40px; 
+    line-height: 125%;
+    font-weight: 900;
+}
+.trusstee{
+    color: #111;
+    margin-top: 9px;
+    font-size: 17px;
+    line-height: 144%;
+    opacity: .9;
+}
+.trusted span{
+    color: var(--main);
+}
+.trustfund{
+    margin-top: 10px;
+    width: 500px;
+    margin-bottom: 40px;
+}
+
+.tinybox:hover .tinyboxsmalltext{
+    color: var(--white);
+        }
+    .tinyicon{
+     
+        width: 20%;
+        height: 100%;
+        animation: vicror 3s ease-in-out infinite;
+
+
+    }
+
+    .tinyiconbox{
+        width: 100%;
+        height: 100%;
+     
+    }
+    .tinyicon img{
+      
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .tinytext{
+        width: 100%;
+    }
+@media screen and (max-width:1280px) {
+    .links{
+        display: none;
+    }
+ 
+    .container {
+        overflow: hidden; /* Prevent overflow */
+      }
+}
+
+@media screen and (max-width:1100px) {
+    .twosides{
+        flex-direction: column;
+    }
+    .herosection {
+        height: fit-content;
+    } 
+
+    .loginpage{
+        height: 100vh;
+        display: flex;
+    }
+
+    .loginpage .logincontainer .logo img{
+        height: 30px;
+    }
+    .herosection .container{
+        height: fit-content;
+    }
+    .sideb img {
+        margin-top: auto;
+        width: 90%;
+        height: 100%;
+        object-fit: contain;
+    }
+ 
+    .topsection{
+        text-align: center;
+        font-size: 22px;
+    }
+.topsection h1{
+    margin-top: 40px;
+}
+    .bottomsection {
+        text-align: center;
+
+    }
+
+    .getstarted {
+        width: 200px;
+        margin: auto;
+    }
+}
+
+.topsection span{
+    color: 
+ var(--main)
+}
+
+.logincontainer{
+    display: flex;
+ 
+align-items: center;
+justify-content: center;
+  
+width: 100%;
+    height: 100%;
+}
+.forgot {
+    margin-top: 6px;
+    display: flex;
+    gap: 6px;
+    font-family: inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000b5;
+}
+
+.forgot a {
+    transition: 0.5s;
+ text-decoration: none;
+    color: #00000099;
+}
+.loginbox{
+    margin-top: 30px;
+
+    box-shadow: 0 0 4px #e6e6e6;
+    padding: 30px;
+    background-color: white;
+    width: 450px;
+    border-radius: 7px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.signupbox{
+    width: 650px; 
+}
+.loginflex {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 18px;
+}
+
+.loginflex, .balancecard{
+    width:100%;
+}
+.loginflex label {
+    
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000cc;
+}
+.logintitle strong {
+    color: #084343;
+}
+
+.logintitle{
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%; /* 22.5px */
+}
+
+.loginbox img{
+  
+      object-fit: contain;
+}
+
+.loginpage{
+    background-image: url('https://unsplash.com/photos/DI0lpZocxl4/download?ixid=M3wxMjA3fDB8MXxhbGx8MTZ8fHx8fHwyfHwxNjg4OTE3NzI3fA&force=true&w=1920');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+
+input:-webkit-autofill {
+    background-color: transparent !important;
+    -webkit-box-shadow: 0 0 0 50px white inset;
+}
+.loginflex input {
+  
+    padding: 0.72rem;
+    font-size: 15px;
+    border-radius: 0.2rem;
+    color: #000;
+    outline: none;
+    width: 100%;
+    border: 1px solid rgb(139 139 139 / 63%);
+    transition: all .25s ease 0s;
+}
+
+.loginflex select {
+  
+    padding: 0.72rem;
+    font-size: 15px;
+    border-radius: 0.2rem;
+    color: #000;
+    width: 100%;
+    border: 1px solid rgba(36, 36, 36, 0.626);
+    transition: all .25s ease 0s;
+}
+
+.loginflex button{
+      margin-top: 10px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 0.2rem;
+    color: #fff;
+    width: 100%;
+    background-color: #001212;
+    border: 1px solid rgba(18, 16, 16, 0.986);
+    transition: all .25s ease 0s;
+}
+
+.loginflex button:hover{
+    color: var(--cultured);
+    background-color: #014747;
+}
+input[type=text], [type=email], [type=password], [type=number], [type=tel], [type=date], select {
+    background: rgb(255, 255, 255);
+}
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+    -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+    -webkit-transition-delay: 9999s;
+    font-family: inter;
+}
+
+.movingaccordion{
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    background-image: url(https://res.cloudinary.com/termii-inc/image/upload/v1674214763/termii-new-website/landing-page/termii-bird_huf129.png);
+}
+@media screen and (max-width:800px) {
+
+    .loginbox{
+        width: 94%;
+    }
+
+    .powering{
+        margin-top: 40px;
+    }
+
+    .trusted {
+        color: #313131;
+        text-align: center;
+        font-family: Poppins;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 27px;
+        line-height: 125%;
+        font-weight: 900;
+    }
+
+    .links a{
+        padding: 10px;
+    }
+
+    .sideb {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-height: 600px;
+    }
+    .trusstee {
+        color: #111;
+        text-align: center;
+        margin-top: 9px;
+        font-size: 16px;
+        line-height: 144%;
+        opacity: .9;
+    }
+    .trustfund{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .topsection h1 {
+        margin-top: 40px;
+        font-size: 1.5em;
+    }
+    .logo img{
+        height: 100%;
+    }
+   
+    .loginbox {
+        margin-top: 20px;
+        box-shadow: 0 0 4px #e6e6e6;
+        padding: 20px;
+    }
+
+    .logintitle {
+     
+        font-size: 14px;
+ 
+    }
+
+}
+
+
+@media screen and (max-width:1000px) {
+
+
+    .navlinkactiveovalay{
+
+        display: flex !important;
+        }
+
+        .alink{
+            background-color: transparent;
+            border: 1px solid #070707;
+            color: black !important;
+        }
+        .hideme{
+            display: flex;
+        }
+
+    .getstarteds{
+        display: none;
+    }
+
+    .navtoggle{
+        display: flex;
+        background-color: #6D201B;
+        border-radius: 3px;
+        font-size: 15px;
+        border: 1px solid #6D201B;
+
+    }
+
+}
+.hideme{
+    width: 100%;
+ 
+    align-items: center;
+    justify-content: center;
+}
+
+.blackboton{
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    color: #6D201B;
+    background-color: #FCC50C;
+    padding: 14px;
+    border-radius: 5px;
+    color: #6D201B !important;
+    border: none;
+    transition: 0.6s;
+    cursor: pointer;
+ }
+
+
+
+
+  @media screen and (max-width:1200px) {
+    .container {
+        width: 95%;
+    }
+ 
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+}
+ 
+
+.balancecard{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.logincontent{
+    width: 100%;
+}
+@media screen and (max-width:700px) {
+    .balancecard{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .loginflex{
+        margin-bottom: 10px;
+    }
+}
