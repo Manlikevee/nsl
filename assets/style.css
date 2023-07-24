@@ -775,6 +775,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
         opacity: .9;
     }
     .trustfund{
+        margin-top: -10px;
         width: 100%;
         margin-bottom: 40px;
     }
