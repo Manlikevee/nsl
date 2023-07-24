@@ -530,9 +530,7 @@ color: #09ecec;
         display: none;
     }
  
-    .container {
-        overflow: hidden; /* Prevent overflow */
-      }
+
 }
 
 @media screen and (max-width:1100px) {
@@ -722,7 +720,7 @@ input[type=text], [type=email], [type=password], [type=number], [type=tel], [typ
 input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
     -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
     -webkit-transition-delay: 9999s;
-    font-family: inter;
+   
 }
 
 .movingaccordion{
@@ -733,6 +731,134 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     background-position: right;
     background-image: url(https://res.cloudinary.com/termii-inc/image/upload/v1674214763/termii-new-website/landing-page/termii-bird_huf129.png);
 }
+
+
+.section .container{
+   
+    display: flex;
+    gap: 30px;
+align-items: center;
+justify-content: center;
+}
+.section{
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+.sideone{
+    width: 100%;
+
+}
+
+.sideone img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 9px;
+}
+.sidetwo{
+    width: 100%;
+}
+.topbranding {
+    color: #000;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.subbrand{
+    color: rgb(90, 90, 91);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.stack__card {
+    width: 100%;
+    padding-top: 70px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+  
+  }
+  
+  .stackimage{
+    display: flex;
+   padding: 10px;
+    justify-content: center;
+  
+    flex-direction: column;
+    width: 37%;
+      object-fit: contain;
+      height: 100%;
+   
+  }
+  
+  .stacktext{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+     justify-content: center;
+  
+  }
+  .puboffice{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .stackimage img{
+  
+    object-fit: contain;
+    height: 100%;
+    max-height: 350px;
+  }
+  .stacktext{
+  color:  #5A5A5B;
+  
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+  
+  }
+  .stack__card:nth-child(1) {
+    background-color: #fff;
+    color: 
+    #5A5A5B;
+  
+  
+  }
+  .stacktext ul{
+    padding: 10px;
+  }
+  .stacktext ul li{
+    list-style-type: disc;
+  }
+  
+  .stack__card:nth-child(2) {
+    background-color: #fff;
+  }
+  .stack__card:nth-child(3) {
+    background-color: #fff;
+  }
+  .stack__card:nth-child(4) {
+    background-color: #fff;
+  }
+  .stack__card:nth-child(5) {
+    background-color: #fff;
+  }
+
+
 @media screen and (max-width:800px) {
 
     .loginbox{
@@ -801,11 +927,37 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     }
 
 }
+.imagebox{
+    width: 100%;
+    width: 700px;
+    margin: auto;
+
+    padding: 10px;
+    border-radius: 7px;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.imagebox img{
+    width: 100%;
+    filter: brightness(0.7);
+}
+
+
+
+@media screen and (max-width: 993px){
+    .stack__card {
+        flex-direction: column;
+        height: fit-content;
+    }
+}
 
 
 @media screen and (max-width:1000px) {
 
-
+    .section .container {
+        flex-direction: column;
+    }
     .navlinkactiveovalay{
 
         display: flex !important;
