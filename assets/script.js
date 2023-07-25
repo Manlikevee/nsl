@@ -39,5 +39,13 @@ function navtoggler() {
     });
   }
 
+  AOS.init({
+    duration: 1200,  // Animation duration in milliseconds
+    offset: 120,  // Offset (in pixels) from the original trigger point
+    easing: 'ease-in-out',  // Easing function for the animation
+    delay: 100,  // Delay (in milliseconds) before the animation starts
+    once: true,  // Whether the animation should only happen once
+    anchorPlacement: 'center',  // Defines vertical anchor placement (top, center, bottom)
+  });
 
   
