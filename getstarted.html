@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
+    <body>
+        <header id="navbar" data-aos="fade-up">
+            <div class="container">
+                <div class="logo" onclick="window.location.href = 'index.html'">
+                    <img src="media/logo (2).png" alt=""> 
+                </div>
+    
+                <div class="links" id="middlelinks">
+                    <a href="dashboard.html" class="activated">Home</a>
+                    <a href="dashboard.html">About</a>
+                    <a href="">What We Do</a>
+                    <a href="">Contact Us</a>
+    
+                    <div class="hideme">
+                        <a href="login.html" class="blackboton">Login</a>
+             
+                    </div>
+    
+                </div>
+    
+                <div class="login getstarteds" onclick="window.location.href = 'login.html'">
+                    Login
+                </div>
+    
+                <div class="navtoggle" onclick="navtoggler()">
+    
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </div>
+            </div>
+    
+        </header>
+
+<style>
+    header{
+        display: none;
+    }
+    .links{
+        display: none;
+    }
+
+    .getstartedsection{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+    }
+
+
+    
+    .getstartedimage{
+        background: linear-gradient(180.09deg, rgba(0, 0, 0, 0.176) 27.66%, rgba(0, 0, 0, 0.8) 78.79%), url(https://images.unsplash.com/photo-1519763909878-93bb13c38cf3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=453&q=80);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 75%;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    }
+    .mpawa {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+a{
+    text-decoration: none;
+}
+.loginflex input {
+    padding: 0.85rem;
+    font-size: 15px;
+    border-radius: 0.32rem;
+    color: #000;
+    outline: none;
+    width: 100%;
+    border: 1px solid rgb(171 171 171 / 63%);
+    transition: all .25s ease 0s;
+}
+    .getstartedlogin{
+        background-image: url('https://img.freepik.com/free-vector/white-abstract-background-design_361591-1248.jpg?w=826&t=st=1690291826~exp=1690292426~hmac=f81508b1394875f1a914b0fcdb47ceda4efa355a2512befb183a4a210fcbfd27');
+        background-position: bottom;
+        background-size: 30%;
+        background-repeat: no-repeat;
+display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 180px;
+ 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+    .mpawatext {
+    color: white;
+    font-family: inter;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.loginbox2{
+    width: 100%;
+}
+    .mpawa img{
+        margin-right: auto;
+    }
+    .logincontent {
+    width: 100%;
+    padding: 30px;
+}
+
+@media screen and (max-width: 1100px){
+    .getstartedsection {
+    flex-direction: column;
+}
+
+.logincontent {
+    width: 100%;
+    padding: 15px;
+}
+.getstartedimage{
+    width: 100%;
+    background-position: center;
+}
+}
+
+@media screen and (max-width:800px) {
+    .getstartedlogin{
+        padding: 50px;
+    }
+    .mpawa{
+        padding: 10px;
+   
+
+    }
+
+    .mpawatext{
+        font-size: 14px;
+        font-weight: 400;
+    line-height: normal;
+    }
+    
+}
+@media screen and (max-width:500px) {
+    .getstartedlogin{
+        padding: 20px;
+    }
+    
+}
+</style>
+      
+<div class="getstartedsection">
+<div class="getstartedimage">
+    <div class="mpawa" data-aos="fade-up">
+        <div class="logo" style="    display: flex;
+        align-items: self-start;
+        justify-content: flex-start;">
+            <a href="index.html" style="color: inherit; text-decoration:none;     display: flex;
+            justify-content: center;
+            align-items: center;">
+        
+           
+        <div class="logo" onclick="window.location.href = 'index.html'" style="    display: flex;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: flex-start;">
+            <img src="media/logo (2).png" alt=""> 
+        </div>
+     
+          
+
+          </a>
+          </div>
+       <div class="mpawatext">
+        Flexible options, competitive rates, exceptional service – Empowering your dreams. Apply now for a seamless borrowing experience and secure a brighter future.
+       </div>
+    </div>
+
+</div>
+<div class="getstartedlogin">
+
+    <div class="loginbox2" data-aos="fade-right">
+<br>
+
+      
+        <div class="logo"  onclick="window.location.href = 'index.html'">
+            <img src="media/logo (2).png" alt="" style="width: fit-content;"> 
+        </div>
+        <div class="logintitle">Welcome Please provide your Log In details. </div>
+
+
+  
+        <div class="loginform">
+          <form method="post" action="">
+              <div class="loginform">
+              
+      
+  
+  
+              <div class="logincontent">
+    
+                <div class="loginflex">
+                    <label for="">Email Address</label>
+                    <input type="email" name="username" id="id_username" placeholder="Enter Your Email Address">
+                </div>
+
+
+                <div class="loginflex">
+                    <label for="">Password</label>
+
+                    <div class="ini">
+                        <input type="password" name="password" id="loginpass" placeholder="*****"> <i id="eyes"
+                            onclick="eyefunclogin()" class="fas fa-solid fa-eye fa-eye-slash"
+                            style="color: #0c3730;"></i>
+                    </div>
+                </div>
+                <div class="forgot">
+                    <p>
+                     <a href="withdraw.html">   Forgot Password </a>
+             
+                    </p>
+                    <p>
+                     |
+                    </p>
+                    <p>
+                     <a href="transactiondetailgreen.html">Forgot User ID</a>
+             
+                    </p>
+             
+                 </div>
+
+                <div class="loginflex">
+                  <button type="submit">LOGIN</button>
+                </div>
+
+                <div class="logintitle">Don’t have an account? <a href="register.html">Create account</a> </div>
+            </div>
+              
+              
+              
+              </div>
+              </form>
+        </div>
+      </div>
+
+</div>
+</div>
+
+
+
+
+
+        
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+        <script src="assets/script.js" async defer></script>
+    </body>
+</html>
