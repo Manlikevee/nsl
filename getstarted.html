@@ -273,7 +273,19 @@ display: flex;
 
 
 
+<script type="text/javascript">
+    // Disable right-click on the entire page
+    window.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+    });
 
+    // Disable Ctrl+Shift keyboard click
+    window.addEventListener('keydown', function (e) {
+        if (e.ctrlKey && e.shiftKey) {
+            e.preventDefault();
+        }
+    });
+</script>
 
         
         <!--[if lt IE 7]>
