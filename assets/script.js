@@ -49,3 +49,24 @@ function navtoggler() {
   });
 
   
+
+  // JavaScript code
+  // document.addEventListener('DOMContentLoaded', function() {
+  //   introJs()
+  //     .setOptions({
+  //       steps: [{
+  //         intro: "Welcome To Your Dashboard"
+  //       }, {
+  //         element: document.querySelector('#step1Target'),
+  //         intro: "Check your active loan amount and number of loans in the Loan Card."
+  //       }, {
+  //         element: document.querySelector('#step2Target'),
+  //         intro: "Add a new loan easily by clicking on 'Add New Loan' in the navigation bar."
+  //       }, {
+  //         element: document.querySelector('#step3Target'),
+  //         intro: "View your loan history and details in the Loan History section."
+  //       }]
+  //     })
+  //     .start();
+  // });
+  

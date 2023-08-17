@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/intro.js/introjs.css">
+        <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    </head>
+    <body>
+        <div id="navlinkovalay"></div>
+        <header id="navbar" style="background-color: white;">
+            <div class="container" data-aos="fade-left">
+                <div class="logo" onclick="window.location.href = 'index.html'">
+                    <img src="media/logo (2).png" alt=""> 
+                </div>
+    
+                <div class="links" id="middlelinks">
+                    <a href="dashboard.html" class="activated">Dashboard</a>
+                    <a href="dashboard.html">Loans</a>
+                    <a href="">Contact Us</a>
+    
+                    <div class="hideme">
+                        <a href="login.html" class="blackboton"> Get Started</a>
+             
+                    </div>
+    
+                </div>
+    
+                <div class="login getstarteds" style="width: fit-content;" onclick="window.location.href = 'login.html'">
+                   Get Started
+                </div>
+    
+                <div class="navtoggle" onclick="navtoggler()">
+    
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </div>
+            </div>
+    
+        </header>
+<br>
+<style>
+    body{
+        font-family: 'Poppins', sans-serif;
+        background: var(--cultured);
+    }
+</style>
+        <div class="container dashcontainer">
+
+
+            <article class="article">
+
+                <h2 class="h2 article-title">Hi Victor</h2>
+          
+                <p class="article-subtitle">Welcome to Dashboard!</p>
+          
+                <!-- 
+                  - #HOME
+                -->
+          
+                <section class="home">
+          
+              
+                  <div class="card revenue-card">
+          
+                    <button class="card-menu-btn icon-box" aria-label="More" data-menu-btn>
+                      <span class="material-symbols-outlined  icon">more_horiz</span>
+                    </button>
+          
+                    <ul class="ctx-menu">
+          
+                      <li class="ctx-item">
+                        <button class="ctx-menu-btn icon-box">
+                          <span class="material-symbols-outlined  icon" aria-hidden="true">edit</span>
+          
+                          <span class="ctx-menu-text">Edit</span>
+                        </button>
+                      </li>
+          
+                      <li class="ctx-item">
+                        <button class="ctx-menu-btn icon-box">
+                          <span class="material-symbols-outlined  icon" aria-hidden="true">cached</span>
+          
+                          <span class="ctx-menu-text">Refresh</span>
+                        </button>
+                      </li>
+          
+                    </ul>
+          
+                    <p class="card-title">Loan Balance</p>
+          
+                    <data class="card-price" value="2100">$2,100</data>
+          
+                    <p class="card-text">Last Week</p>
+          
+                    <div class="divider card-divider"></div>
+          
+                    <ul class="revenue-list">
+          
+                      <li class="revenue-item icon-box">
+          
+                        <span class="material-symbols-outlined  icon  green">trending_up</span>
+          
+                        <div>
+                          <data class="revenue-item-data" value="15">15%</data>
+          
+                          <p class="revenue-item-text">Prev Week</p>
+                        </div>
+          
+                      </li>
+          
+                      <li class="revenue-item icon-box">
+          
+                        <span class="material-symbols-outlined  icon  red">trending_down</span>
+          
+                        <div>
+                          <data class="revenue-item-data" value="10">10%</data>
+          
+                          <p class="revenue-item-text">Prev Month</p>
+                        </div>
+          
+                      </li>
+          
+                    </ul>
+          
+                  </div>
+                  <div class="card-wrapper">
+          
+                    <div class="card task-card">
+          
+                      <div class="card-icon icon-box green">
+                        <span class="material-symbols-outlined  icon">decimal_increase</span>
+                      </div>
+          
+                      <div>
+                        <data class="card-data" value="21">21</data>
+          
+                        <p class="card-text">Pending Loans</p>
+                      </div>
+          
+                    </div>
+          
+                    <div class="card task-card">
+          
+                      <div class="card-icon icon-box blue">
+                        <span class="material-symbols-outlined  icon">decimal_decrease</span>
+                      </div>
+          
+                      <div>
+                        <data class="card-data" value="21">21</data>
+          
+                        <p class="card-text">Total Loans</p>
+                      </div>
+          
+                    </div>
+          
+                  </div>
+          
+                
+          
+                  <div class="card profile-card">
+          
+                    <button class="card-menu-btn icon-box" aria-label="More" data-menu-btn>
+                      <span class="material-symbols-outlined  icon">more_horiz</span>
+                    </button>
+          
+                    <ul class="ctx-menu">
+          
+                      <li class="ctx-item">
+                        <button class="ctx-menu-btn icon-box">
+                          <span class="material-symbols-outlined  icon" aria-hidden="true">edit</span>
+          
+                          <span class="ctx-menu-text">Edit</span>
+                        </button>
+                      </li>
+          
+                      <li class="ctx-item">
+                        <button class="ctx-menu-btn icon-box">
+                          <span class="material-symbols-outlined  icon" aria-hidden="true">cached</span>
+          
+                          <span class="ctx-menu-text">Refresh</span>
+                        </button>
+                      </li>
+          
+                      <li class="divider"></li>
+          
+                      <li class="ctx-item">
+                        <button class="ctx-menu-btn red icon-box">
+                          <span class="material-symbols-outlined  icon" aria-hidden="true">delete</span>
+          
+                          <span class="ctx-menu-text">Deactivate</span>
+                        </button>
+                      </li>
+          
+                    </ul>
+          
+                    <div class="profile-card-wrapper">
+          
+                      <figure class="card-avatar">
+                        <img src="https://images.unsplash.com/photo-1687360440984-3a0d7cfde903?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" alt="Elizabeth Foster" width="48" height="48">
+                      </figure>
+          
+                      <div>
+                        <p class="card-title">Victor Odah</p>
+          
+                        <p class="card-subtitle">Web & Graphic Designer</p>
+                      </div>
+          
+                    </div>
+          
+                    <ul class="contact-list">
+          
+                      <li>
+                        <a href="mailto:xyz@mail.com" class="contact-link icon-box">
+                     
+                          <span class="material-symbols-outlined icon">
+                            mail
+                            </span>
+                          <p class="text">xyz@mail.com</p>
+                        </a>
+                      </li>
+          
+                      <li>
+                        <a href="tel:00123456789" class="contact-link icon-box">
+                          <span class="material-symbols-outlined  icon">call</span>
+          
+                          <p class="text">+00 123-456-789</p>
+                        </a>
+                      </li>
+          
+                    </ul>
+          
+                    <div class="divider card-divider"></div>
+          
+                    <ul class="progress-list">
+          
+                      <li class="progress-item">
+          
+                        <div class="progress-label">
+                          <p class="progress-title">Profile Completion</p>
+          
+                          <data class="progress-data" value="85">85%</data>
+                        </div>
+          
+                        <div class="progress-bar">
+                          <div class="progress" style="width: 85%; background: var(--blue-ryb);"></div>
+                        </div>
+          
+                      </li>
+          
+                      <li class="progress-item">
+          
+                        <div class="progress-label">
+                          <p class="progress-title">Credit Rating</p>
+          
+                          <data class="progress-data" value="7.5">7.5</data>
+                        </div>
+          
+                        <div class="progress-bar">
+                          <div class="progress" style="width: 75%; background: var(--coral);"></div>
+                        </div>
+          
+                      </li>
+          
+                    </ul>
+          
+                  </div>
+          
+                </section>
+          
+          
+          
+          
+                <!-- 
+                  - #PROJECTS
+                -->
+          
+          
+          
+          
+          
+                <!-- 
+                  - #TASKS
+                -->
+          
+          
+          
+              </article>
+          
+          <br>
+
+
+
+
+            <article>
+                <div class="loanrequests" id="step2Target">
+                  <div class="loanrequestheader">
+                      <div class="loanrequesttitle">
+                         <h4> Loan Requests </h4>
+                      </div>
+                      <div class="loanrequestbutton">
+                           <button onclick="openModal(66)">New Loan +</button>
+                      </div>
+                  </div>
+                  <br>
+              </div>
+              <p>
+                This shows the most recent activities across your crystal finance account.
+              </p>
+              
+              <br>
+              
+              
+              <div class="loantablediv" id="step3Target">
+          
+            
+          
+              <div class="mustscroll activityscroll">
+                <div class="activitybox">
+                  <div class="activitydemo">
+                    <div class="activitylogo">
+                      <div class="svs">
+                        <span class="material-symbols-outlined">
+                          account_balance_wallet
+                          </span>
+                      </div>
+                    </div>
+                    <div class="activitytext">
+                      <div class="activitytoptext">
+                        Status Awaiting Payment ( 224423153 )</div>
+                      <div class="activitybottomtext">
+                        <small>23-June-2021</small>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="activityview card-subtitle">View Details</div>
+                </div>
+                <div class="activitybox">
+                  <div class="activitydemo">
+                    <div class="activitylogo">
+                      <div class="svs">
+                        <span class="material-symbols-outlined">
+                          account_balance_wallet
+                          </span>
+                      </div>
+                    </div>
+                    <div class="activitytext">
+                      <div class="activitytoptext">
+                        Status Awaiting Payment ( 224423153 )</div>
+                      <div class="activitybottomtext">
+                        <small>23-June-2021</small>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="activityview card-subtitle">View Details</div>
+                </div>
+          
+                <div class="activitybox">
+                  <div class="activitydemo">
+                    <div class="activitylogo">
+                      <div class="svs">
+                        <span class="material-symbols-outlined">
+                          account_balance_wallet
+                          </span>
+                      </div>
+                    </div>
+                    <div class="activitytext">
+                      <div class="activitytoptext">
+                        Status Awaiting Payment ( 224423153 )</div>
+                      <div class="activitybottomtext">
+                        <small>23-June-2021</small>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="activityview card-subtitle">View Details</div>
+                </div>
+          
+                <div class="activitybox">
+                  <div class="activitydemo">
+                    <div class="activitylogo">
+                      <div class="svs">
+                        <span class="material-symbols-outlined">
+                          account_balance_wallet
+                          </span>
+                      </div>
+                    </div>
+                    <div class="activitytext">
+                      <div class="activitytoptext">
+                        Status Awaiting Payment ( 224423153 )</div>
+                      <div class="activitybottomtext">
+                        <small>23-June-2021</small>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="activityview card-subtitle">View Details</div>
+                </div>
+          
+                <div class="activitybox">
+                  <div class="activitydemo">
+                    <div class="activitylogo">
+                      <div class="svs">
+                        <span class="material-symbols-outlined">
+                          account_balance_wallet
+                          </span>
+                      </div>
+                    </div>
+                    <div class="activitytext">
+                      <div class="activitytoptext">
+                        Status Awaiting Payment ( 224423153 )</div>
+                      <div class="activitybottomtext">
+                        <small>23-June-2021</small>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="activityview card-subtitle">View Details</div>
+                </div>
+          
+                <div class="activitybox">
+                  <div class="activitydemo">
+                    <div class="activitylogo">
+                      <div class="svs">
+                        <span class="material-symbols-outlined">
+                          account_balance_wallet
+                          </span>
+                      </div>
+                    </div>
+                    <div class="activitytext">
+                      <div class="activitytoptext">
+                        Status Awaiting Payment ( 224423153 )</div>
+                      <div class="activitybottomtext">
+                        <small>23-June-2021</small>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="activityview card-subtitle">View Details</div>
+                </div>
+          
+                <div class="activitybox">
+                  <div class="activitydemo">
+                    <div class="activitylogo">
+                      <div class="svs">
+                        <span class="material-symbols-outlined">
+                          account_balance_wallet
+                          </span>
+                      </div>
+                    </div>
+                    <div class="activitytext">
+                      <div class="activitytoptext">
+                        Status Awaiting Payment ( 224423153 )</div>
+                      <div class="activitybottomtext">
+                        <small>23-June-2021</small>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="activityview card-subtitle">View Details</div>
+                </div>
+          
+                <div class="activitybox">
+                  <div class="activitydemo">
+                    <div class="activitylogo">
+                      <div class="svs">
+                        <span class="material-symbols-outlined">
+                          account_balance_wallet
+                          </span>
+                      </div>
+                    </div>
+                    <div class="activitytext">
+                      <div class="activitytoptext">
+                        Status Awaiting Payment ( 224423153 )</div>
+                      <div class="activitybottomtext">
+                        <small>23-June-2021</small>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="activityview card-subtitle">View Details</div>
+                </div>
+          
+                
+                
+          
+              
+              </div>
+              
+              </div>
+              
+              </article>
+
+        </div>
+ 
+      
+        
+<script src="https://unpkg.com/intro.js/intro.js"></script>
+
+
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+            <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+      
+        <script src="assets/script.js" async defer></script>
+    </body>
+</html>

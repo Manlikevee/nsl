@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/intro.js/introjs.css">
+        <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    </head>
+    <body >
+        <style>
+            body{
+                font-family: 'Poppins', sans-serif;
+                background: var(--cultured);
+            }
+        </style>
+        <div id="navlinkovalay"></div>
+        <header id="navbar" style="background-color: white;">
+            <div class="container" data-aos="fade-left">
+                <div class="logo" onclick="window.location.href = 'index.html'">
+                    <img src="media/logo (2).png" alt=""> 
+                </div>
+    
+                <div class="links" id="middlelinks">
+                    <a href="dashboard.html" class="activated">Dashboard</a>
+                    <a href="dashboard.html">Loans</a>
+                    <a href="loandetail.html">Contact Us</a>
+    
+                    <div class="hideme">
+                        <a href="login.html" class="blackboton"> Get Started</a>
+             
+                    </div>
+    
+                </div>
+    
+                <div class="login getstarteds" style="width: fit-content;" onclick="window.location.href = 'login.html'">
+                   Get Started
+                </div>
+    
+                <div class="navtoggle" onclick="navtoggler()">
+    
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </div>
+            </div>
+    
+        </header>
+<br>
+<br>
+        <div class="container dashcontainer">
+
+
+
+
+<div class="dashboardform">
+
+    <div class="loanrequesttitles">
+        <h4> Profile Update </h4>
+     </div>
+    
+    <p class="info-text">
+        Verify your account number to ensure accurate and secure transactions. This process helps us provide you with a better experience and ensures that your information is up-to-date.</p>
+
+  <div class="dashboardformflex">
+    <div class="dashboardformtitle">
+Complete Your Profile Update
+    </div>
+
+    <div class="updcanc">
+      <div class="circle done"></div> <div class="lint"></div> <div class="circle done"></div> <div class="lint"></div><div class="circle"></div>
+          </div>
+
+      
+  </div>
+  <div class="dbform">
+    <div class="dbcolumn">
+     <div class="loginflex">
+         <label for="">Account Number</label>
+         <input type="text" name="firstname" id="id_username" placeholder="Enter Your First Name">
+     </div>
+     <div class="loginflex">
+         <label for="">Account Name</label>
+         <input type="text" name="lastname" id="id_username" placeholder="Enter Your Last Name">
+     </div>
+    </div>
+
+
+       <div class="dbcolumn">
+        <div class="loanrequestbutton">
+            <button>Submit</button>
+        </div>
+       </div>
+
+   </div>
+</div>
+
+
+
+        </div>
+ 
+
+        <div className="dashboardform">
+            <div className="loanrequesttitles">
+              <h4> Profile Update </h4>
+            </div>
+            <p className="info-text">
+              Verify your account number to ensure accurate and secure transactions. This
+              process helps us provide you with a better experience and ensures that your
+              information is up-to-date.
+            </p>
+            <div className="dashboardformflex">
+              <div className="dashboardformtitle">Complete Your Profile Update</div>
+              <div className="updcanc">
+                <div className="circle done" /> <div className="lint" />{" "}
+                <div className="circle done" /> <div className="lint" />
+                <div className="circle" />
+              </div>
+            </div>
+            <div className="dbform">
+              <div className="dbcolumn">
+
+   
+              <div className="loginflex">
+                <label htmlFor="">Bank</label>
+               
+                <Select
+                options={banks}
+                value={selectedBank}
+                onChange={setSelectedBank}
+                placeholder="Select a bank"
+                isLoading={loadingBanks}
+              />
+          
+              </div>
+
+                <div className="loginflex">
+                  <label htmlFor="">Account Number</label>
+                  <input
+                  type="text"
+                  placeholder="Account Number"
+                  value={accountNumber}
+                  onChange={handleAccountNumberChange}
+                />
+                <button className="smb"  onClick={handleAccountVerification} >Verify</button>
+                </div>
+
+                {loadingVerification && <div>Loading...</div>}
+                {accountName && (
+                    <div>
+                <div className="loginflex">
+                  <label htmlFor="">Account Name</label>
+                  <input type="text" readOnly value={accountName} />
+                </div>
+                <div className="dbcolumn">
+                    <div className="loanrequestbutton">
+                      <button>Submit</button>
+                    </div>
+                  </div>
+                </div>
+                  )}
+              </div>
+          
+            </div>
+          </div>
+          
+
+          <button style="width:fit-content" onClick={handleAccountVerification}>Verify</button>
+      
+        
+<script src="https://unpkg.com/intro.js/intro.js"></script>
+
+        
+<script>
+    const modal = document.getElementById("myModal");
+    const modalContent = document.querySelector(".modal-content");
+    
+    function openModal(modalNumber) {
+      modal.style.display = "flex";
+      // You can use the 'modalNumber' variable to do something specific for each modal
+      console.log("Modal number clicked:", modalNumber);
+      const re = document.getElementById('ref').innerHTML = modalNumber;
+    }
+    
+    function closeModal() {
+      modal.style.display = "none";
+    }
+    
+    // Close the modal when clicking outside the modal content
+    window.addEventListener("click", function(event) {
+      if (event.target === modal) {
+        closeModal();
+      }
+    });
+    
+    </script>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+            <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+      
+        <script src="assets/script.js" async defer></script>
+    </body>
+</html>
