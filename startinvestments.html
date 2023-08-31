@@ -59,20 +59,95 @@
         <div class="container dashcontainer">
 
 
+<style>
+  .steppercontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 5px;
+}
+.numb {
+    margin: inherit;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background-color: #007146;
+    border-radius: 50%;
+    color: white;
+}
+.stepper .title {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
+.stepper {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
 
+.ends .numb {
+    background-color: #98C3B0;
+}
+.ends {
+    display: flex;
+    margin-left: auto;
+    flex-direction: column;
+}
+.ends .title {
+    text-align: right;
+}
+</style>
 
 <div class="dashboardform">
 
     <div class="loanrequesttitles">
-        <h4> Profile Update </h4>
+      <div class="steppercontainer">
+        <div class="stepper">
+            <div class="numb">
+1
+            </div>
+            <div class="title">
+                Loan Request
+            </div>
+        </div>
+
+
+
+        <div class="stepper ends">
+            <div class="numb">
+2
+            </div>
+            <div class="title">
+              Loan Overview
+            </div>
+        </div>
+    </div>
      </div>
     
+     <span class="info-title">
+Term Loan
+     </span>
     <p class="info-text">
         Verify your account number to ensure accurate and secure transactions. This process helps us provide you with a better experience and ensures that your information is up-to-date.</p>
 
   <div class="dashboardformflex">
     <div class="dashboardformtitle">
-Complete Your Profile Update
+      Quick Loan Application Form
     </div>
 
     <div class="updcanc">
@@ -81,17 +156,43 @@ Complete Your Profile Update
 
       
   </div>
-  <div class="dbform">
+  <form class="dbform">
     <div class="dbcolumn">
      <div class="loginflex">
-         <label for="">Account Number</label>
+         <label for="Principal">Principal</label>
          <input type="text" name="firstname" id="id_username" placeholder="Enter Your First Name">
      </div>
+
      <div class="loginflex">
-         <label for="">Account Name</label>
+         <label for="Interest Rate">Tenor</label>
          <input type="text" name="lastname" id="id_username" placeholder="Enter Your Last Name">
      </div>
     </div>
+
+    <div class="dbcolumn">
+      <div class="loginflex">
+          <label for="Principal">Start Date</label>
+          <input type="date" name="firstname" id="id_username" placeholder="Enter Your First Name">
+      </div>
+ 
+      <div class="loginflex">
+          <label for="Interest Rate">Maturity Date</label>
+          <input type="date" name="firstname" id="id_username" placeholder="Enter Your First Name">
+      </div>
+     </div>
+
+     <div class="dbcolumn">
+      <div class="loginflex">
+          <label for="Principal">Interest Rate</label>
+          <input type="text" name="firstname" id="id_username" placeholder="Enter Your First Name">
+      </div>
+ 
+      <div class="loginflex">
+          <label for="Interest Rate">Total Repayment</label>
+          <input type="text" name="lastname" id="id_username" placeholder="Enter Your Last Name">
+      </div>
+     </div>
+     
 
 
        <div class="dbcolumn">
@@ -100,14 +201,14 @@ Complete Your Profile Update
         </div>
        </div>
 
-   </div>
+      </form>
 </div>
 
 
 
         </div>
  
-
+<!-- 
         <div className="dashboardform">
             <div className="loanrequesttitles">
               <h4>Bank Account Update </h4>
@@ -170,8 +271,77 @@ Complete Your Profile Update
               </div>
           
             </div>
+          </div> -->
+          
+          <div className="dashboardform">
+            <div className="loanrequesttitles">
+              <div className="steppercontainer">
+                <div className="stepper">
+                  <div className="numb">1</div>
+                  <div className="title">Loan Request</div>
+                </div>
+                <div className="stepper ends">
+                  <div className="numb">2</div>
+                  <div className="title">Loan Overview</div>
+                </div>
+              </div>
+            </div>
+            <span className="info-title">{loanData.Loan_name}</span>
+            <p className="info-text">
+              {loanData.Loan_description}
+            </p>
+            <div className="dashboardformflex">
+              <div className="dashboardformtitle">Quick Loan Application Form</div>
+              <div className="updcanc">
+                <div className="circle done" /> <div className="lint" />{" "}
+                <div className="circle done" /> <div className="lint" />
+                <div className="circle" />
+              </div>
+            </div>
+
+            <form className="dbform" onSubmit={handleSubmit}>
+              <div className="dbcolumn">
+                <div className="loginflex">
+                  <label htmlFor="Principal">Principal</label>
+                  <input type="number" value={principal} onChange={e => setPrincipal(e.target.value)} />
+                </div>
+                <div className="loginflex">
+                  <label htmlFor="Tenor">Tenor</label>
+                  <input type="number" value={tenor} onChange={e => setTenor(e.target.value)} />
+                </div>
+              </div>
+              <div className="dbcolumn">
+                <div className="loginflex">
+                  <label htmlFor="startDate">Start Date</label>
+                  <input type="date" value={startDate} onChange={e => setStartDate(e.target.value)} />
+                </div>
+                <div className="loginflex">
+                  <label htmlFor="maturityDate">Maturity Date</label>
+                  <input type="text" readOnly value={maturityDate} />
+                </div>
+              </div>
+              <div className="dbcolumn">
+                <div className="loginflex">
+                  <label htmlFor="interestRate">Interest Rate</label>
+                  <input type="text" readOnly value={interestRate} />
+                </div>
+                <div className="loginflex">
+                  <label htmlFor="totalRepayment">Total Repayment</label>
+                  <input type="text" readOnly value={totalRepayment} />
+                </div>
+              </div>
+              <div className="dbcolumn">
+                <div className="loanrequestbutton">
+                  <button>Submit</button>
+                </div>
+              </div>
+            </form>
+
           </div>
           
+
+
+
 
           <button style="width:fit-content" onClick={handleAccountVerification}>Verify</button>
       

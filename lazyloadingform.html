@@ -61,18 +61,21 @@
 
 
 
-<div class="dashboardform">
+<div class="dashboardform skelenton">
 
     <div class="loanrequesttitles">
         <h4> Profile Update </h4>
      </div>
-    
-    <p class="info-text">
-        Verify your account number to ensure accurate and secure transactions. This process helps us provide you with a better experience and ensures that your information is up-to-date.</p>
+    <br>
 
+
+        <p class="info-text">
+        
+        </p>
+        <br>
   <div class="dashboardformflex">
     <div class="dashboardformtitle">
-Complete Your Profile Update
+
     </div>
 
     <div class="updcanc">
@@ -83,7 +86,7 @@ Complete Your Profile Update
   </div>
   <div class="dbform">
     <div class="dbcolumn">
-     <div class="loginflex">
+     <div class="loginflex ">
          <label for="">Account Number</label>
          <input type="text" name="firstname" id="id_username" placeholder="Enter Your First Name">
      </div>
@@ -92,7 +95,16 @@ Complete Your Profile Update
          <input type="text" name="lastname" id="id_username" placeholder="Enter Your Last Name">
      </div>
     </div>
-
+    <div class="dbcolumn">
+      <div class="loginflex">
+          <label for="">Account Number</label>
+          <input type="text" name="firstname" id="id_username" placeholder="Enter Your First Name">
+      </div>
+      <div class="loginflex">
+          <label for="">Account Name</label>
+          <input type="text" name="lastname" id="id_username" placeholder="Enter Your Last Name">
+      </div>
+     </div>
 
        <div class="dbcolumn">
         <div class="loanrequestbutton">
@@ -108,70 +120,7 @@ Complete Your Profile Update
         </div>
  
 
-        <div className="dashboardform">
-            <div className="loanrequesttitles">
-              <h4>Bank Account Update </h4>
-            </div>
-            <p className="info-text">
-              Verify your account number to ensure accurate and secure transactions. This
-              process helps us provide you with a better experience and ensures that your
-              information is up-to-date.
-            </p>
-            <div className="dashboardformflex">
-              <div className="dashboardformtitle">Complete Your Profile Update</div>
-              <div className="updcanc">
-                <div className="circle done" /> <div className="lint" />{" "}
-                <div className="circle done" /> <div className="lint" />
-                <div className="circle" />
-              </div>
-            </div>
-            <div className="dbform">
-              <div className="dbcolumn">
-
-   
-              <div className="loginflex">
-                <label htmlFor="">Bank</label>
-               
-                <Select
-                options={banks}
-                value={selectedBank}
-                onChange={setSelectedBank}
-                placeholder="Select a bank"
-                isLoading={loadingBanks}
-              />
-          
-              </div>
-
-                <div className="loginflex">
-                  <label htmlFor="">Account Number</label>
-                  <input
-                  type="text"
-                  placeholder="Account Number"
-                  value={accountNumber}
-                  onChange={handleAccountNumberChange}
-                />
-                <button className="smb"  onClick={handleAccountVerification} >Verify</button>
-                </div>
-
-                {loadingVerification && <div>Loading...</div>}
-                {accountName && (
-                    <div>
-                <div className="loginflex">
-                  <label htmlFor="">Account Name</label>
-                  <input type="text" readOnly value={accountName} />
-                </div>
-                <div className="dbcolumn">
-                    <div className="loanrequestbutton">
-                      <button>Submit</button>
-                    </div>
-                  </div>
-                </div>
-                  )}
-              </div>
-          
-            </div>
-          </div>
-          
+      
 
           <button style="width:fit-content" onClick={handleAccountVerification}>Verify</button>
       
