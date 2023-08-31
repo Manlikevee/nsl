@@ -3337,6 +3337,20 @@ border-radius: 9px;
     position: relative;
 }
 
+.skelenton .card-title, .card-text, .revenue-item-data, .revenue-item-text{
+    background-color: #bfbfbf;
+    color: transparent !important;
+    margin-top: 2px;
+    border-radius: 5px;
+}
+
+.skelenton .card-price, .card-subtitle, .contact-link{
+    min-height: 20px;
+    margin-bottom: 10px;
+    background-color: #bfbfbf;
+    color: transparent;
+    border-radius: 5px;
+} 
 
 .skelenton .loanrequesttitles h4{
     margin-top: 9px;
@@ -3347,7 +3361,48 @@ border-radius: 9px;
     margin: auto;
     color: transparent;
   }
+.skelenton h4{
+    width: fit-content;
+    background-color: #bfbfbf;
+        color: transparent;
+}
+  .skelenton .card-icon, .card-avatar{
+    background-color: #bfbfbf !important;
+   
+  }
 
+
+  .skelenton .card-avatar img{
+    display: none;
+  }
+
+  .skelenton .card-avatar{
+    width: 45px;
+    height: 45px;
+  }
+  .skelenton .task-card .card-icon.green,.card-icon.blue{
+    color: transparent !important;
+    --color: transparent !important;
+  }
+
+ .skelenton .revenue-item .icon.green, .card-data, .progress-title, .progress-data, .activitytoptext, .activitybottomtext{
+    background-color: #bfbfbf !important;
+    color: transparent !important;
+    --color: transparent !important;
+    border-radius: 2px;
+    width: fit-content;
+ }
+
+ .progress{
+    display: none;
+ }
+ 
+ .skelenton .revenue-item .icon.red {
+    background-color: #bfbfbf !important;
+    color: transparent !important;
+    --color: transparent !important;
+
+ }
   .skelenton .info-text{
     margin-top: 0px;
     background-color: #bfbfbf;
