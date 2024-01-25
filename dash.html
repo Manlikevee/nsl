@@ -20,16 +20,16 @@
         <header id="navbar" style="background-color: white;">
             <div class="container" data-aos="fade-left">
                 <div class="logo" onclick="window.location.href = 'index.html'">
-                    <img src="media/logo (2).png" alt=""> 
+                    <img src="Group 39810.png" alt="">  <div class="dv">Apex<span>Co</span></div>
                 </div>
     
                 <div class="links" id="middlelinks">
                     <a href="dashboard.html" class="activated">Dashboard</a>
-                    <a href="dashboard.html">Loans</a>
+                    <a href="dashboard.html">Transactions</a>
                     <a href="">Contact Us</a>
     
                     <div class="hideme">
-                        <a href="login.html" class="blackboton"> Get Started</a>
+                        <a href="login.html" class="blackboton"> Logout</a>
              
                     </div>
     
@@ -68,7 +68,7 @@
                   - #HOME
                 -->
           
-                <section class="home skelenton">
+                <section class="home">
           
               
                   <div class="card revenue-card">
@@ -105,28 +105,32 @@
           
                     <div class="divider card-divider"></div>
           
-                    <ul class="revenue-list">
+                    <ul class="progress-list">
           
-                      <li class="revenue-item icon-box">
+                      <li class="progress-item">
           
-                        <span class="material-symbols-outlined  icon  green">trending_up</span>
+                        <div class="progress-label">
+                          <p class="progress-title">Profile</p>
           
-                        <div>
-                          <data class="revenue-item-data" value="15">15%</data>
+                          <data class="progress-data" value="85">85%</data>
+                        </div>
           
-                          <p class="revenue-item-text">Prev Week</p>
+                        <div class="progress-bar">
+                          <div class="progress" style="width: 85%; background: var(--blue-ryb);"></div>
                         </div>
           
                       </li>
           
-                      <li class="revenue-item icon-box">
+                      <li class="progress-item">
           
-                        <span class="material-symbols-outlined  icon  red">trending_down</span>
+                        <div class="progress-label">
+                          <p class="progress-title">Credit Rating</p>
           
-                        <div>
-                          <data class="revenue-item-data" value="10">10%</data>
+                          <data class="progress-data" value="7.5">7.5</data>
+                        </div>
           
-                          <p class="revenue-item-text">Prev Month</p>
+                        <div class="progress-bar">
+                          <div class="progress" style="width: 75%; background: var(--coral);"></div>
                         </div>
           
                       </li>
@@ -145,7 +149,7 @@
                       <div>
                         <data class="card-data" value="21">21</data>
           
-                        <p class="card-text">Pending Loans</p>
+                        <p class="card-text">Incomings</p>
                       </div>
           
                     </div>
@@ -159,7 +163,7 @@
                       <div>
                         <data class="card-data" value="21">21</data>
           
-                        <p class="card-text">Total Loans</p>
+                        <p class="card-text">Outgoings</p>
                       </div>
           
                     </div>
@@ -207,9 +211,11 @@
                     <div class="profile-card-wrapper">
           
                       <figure class="card-avatar">
-                        <img src="https://images.unsplash.com/photo-1687360440984-3a0d7cfde903?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" alt="Elizabeth Foster" width="48" height="48">
+                        <img src="https://cellafinance.com/media/profile_photo/user.png" alt="Elizabeth Foster" width="48" height="48">
                       </figure>
           
+
+
                       <div>
                         <p class="card-title">Victor Odah</p>
           
@@ -241,38 +247,53 @@
                     </ul>
           
                     <div class="divider card-divider"></div>
-          
-                    <ul class="progress-list">
-          
-                      <li class="progress-item">
-          
-                        <div class="progress-label">
-                          <p class="progress-title">Profile Completion</p>
-          
-                          <data class="progress-data" value="85">85%</data>
-                        </div>
-          
-                        <div class="progress-bar">
-                          <div class="progress" style="width: 85%; background: var(--blue-ryb);"></div>
-                        </div>
-          
-                      </li>
-          
-                      <li class="progress-item">
-          
-                        <div class="progress-label">
-                          <p class="progress-title">Credit Rating</p>
-          
-                          <data class="progress-data" value="7.5">7.5</data>
-                        </div>
-          
-                        <div class="progress-bar">
-                          <div class="progress" style="width: 75%; background: var(--coral);"></div>
-                        </div>
-          
-                      </li>
-          
-                    </ul>
+                    <ul class="revenue-list" style="gap: 15px; grid-template-columns: 1fr;">
+
+                      <style>
+              
+                          .withdrawalbutton{
+               width: 100%;
+              
+               background-color:hsl(144, 62%, 53%);
+               height: 100%;
+               padding: 10px;
+               text-align: center;
+               border-radius: 5px;
+               cursor: pointer;
+               color: black;
+              
+               font-size: 17px;
+               font-family: inter;
+               font-weight: 500;
+               transition: 0.5s;
+              }
+              
+              .withdrawalbutton:hover{
+                background-color:hsla(144, 85%, 49%, 0.455);
+              }
+              
+              
+              .pac{
+                background-color:var(--pacific-blue_12);
+                color: var(--pacific-blue);
+              }
+              
+              .pac:hover{
+                background-color:var(--pacific-blue_12);
+                color: var(--pacific-blue);
+              }
+              </style>
+              
+              <div class="withdrawalbutton pac" onclick="location.href='/userdashboard/withdrawal';">
+              Transfer
+              </div>
+              
+              <!--<div class="withdrawalbutton pac" onclick="alert('This feature will be unavailable on your account until the validation of your submitted profile data is complete.')">-->
+              <!--  Transfer-->
+              <!--  </div>-->
+              
+                        </ul>
+                
           
                   </div>
           
@@ -304,7 +325,7 @@
 
             <article >
                 <div class="loanrequests " id="step2Target">
-                  <div class="loanrequestheader skelenton">
+                  <div class="loanrequestheader ">
                       <div class="loanrequesttitle">
                          <h4> Loan Requests </h4>
                       </div>
@@ -327,7 +348,7 @@
           
               <div class="mustscroll activityscroll">
                 <div class="activitybox">
-                  <div class="activitydemo skelenton">
+                  <div class="activitydemo ">
                     <div class="activitylogo">
                       <div class="svs">
                         <span class="material-symbols-outlined">
@@ -347,7 +368,7 @@
                   <div class="activityview card-subtitle">View Details</div>
                 </div>
                 <div class="activitybox">
-                  <div class="activitydemo skelenton">
+                  <div class="activitydemo ">
                     <div class="activitylogo">
                       <div class="svs">
                         <span class="material-symbols-outlined">
