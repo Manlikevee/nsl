@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #message-container {
+      height: 300px;
+      overflow-y: scroll;
+    }
+
+    .message {
+      border: 1px solid #ddd;
+      margin: 5px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="message-container"></div>
+
+<script>
+  const messageContainer = document.getElementById('message-container');
+  const totalMessages = 50000; // Assume you have 50,000 messages
+
+  // Simulating loading messages
+  function loadMessages(start, count) {
+    for (let i = start; i < start + count; i++) {
+      const message = document.createElement('div');
+      message.className = 'message';
+      message.id = `message${i}`;
+      message.textContent = `Message ${i}`;
+      messageContainer.appendChild(message);
+    }
+  }
+
+  // Load initial messages
+  loadMessages(1, 5);
+
+  // Function to scroll to a target message
+  function scrollToMessage(messageId) {
+    const targetMessage = document.getElementById(messageId);
+    if (targetMessage) {
+      targetMessage.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      // Load more messages and check again
+      const currentMessageCount = messageContainer.childElementCount;
+      loadMessages(currentMessageCount + 1, 5);
+
+      // Recursive call to keep checking until the target message is found
+      setTimeout(() => {
+        scrollToMessage(messageId);
+      }, 500); // Adjust the timeout as needed
+    }
+  }
+  +
+
+  // Example: Scroll to message with ID "message100" when clicking a link
+  document.getElementById('linkToMessage100').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default link behavior
+    scrollToMessage('message100');
+  });
+
+  // Add more links for other messages as needed
+  document.getElementById('linkToMessage200').addEventListener('click', function(event) {
+    event.preventDefault();
+    scrollToMessage('message200');
+  });
+
+</script>
+
+<!-- Navigation links for different messages -->
+<a id="linkToMessage100" href="#">Scroll to Message 100</a>
+<a id="linkToMessage200" href="#">Scroll to Message 200</a>
+<!-- Add more navigation links as needed -->
+
+</body>
+</html>

@@ -59,14 +59,14 @@
         <div class="container dashcontainer">
 
 <div class="usersname">
-  <h4> Welcome Oluwatosin</h4> 
+  <h4> Welcome Admin</h4> 
 </div>
 
 <div class="dashboardcard" >
     <div class="dashcard" id="step1Target">
         <div class="dashcardheader">
            <div class="dashamount">
-            Loan Amount
+            TOTAL WITHDRAWALS
            </div>
            <div class="dashtoggle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
             <path d="M8 3.25C8.41421 3.25 8.75 2.91421 8.75 2.5C8.75 2.08579 8.41421 1.75 8 1.75C7.58579 1.75 7.25 2.08579 7.25 2.5C7.25 2.91421 7.58579 3.25 8 3.25Z" stroke="#6D201B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -80,9 +80,70 @@
         </div>
 
         <div class="dashfooter">
-            <div class="numberofloans">Active Loans</div>
+            <div class="numberofloans">Count</div>
             <div class="totalnum">23</div>
         </div>
+    </div>
+<style>
+  .dashboardcard{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .dcardsmall{
+    height: 99px ;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    min-width: 99px;
+    gap: 6px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    border-radius: 4px;
+  }
+
+
+
+
+.dcardsmall ion-icon{
+  font-size: 22px;
+ 
+
+
+}
+  .dcardsmall .dashamount{
+    color: black;
+    font-weight: 700;
+    text-align: center;
+  }
+</style>
+    <div class="dcardsmall">
+      <ion-icon name="person-add-outline"></ion-icon>
+      
+      <div class="dashamount">
+   
+
+
+        Add User
+      </div>
+
+      
+    </div>
+
+    <div class="dcardsmall">
+      <ion-icon name="cash-outline"></ion-icon>
+      
+      <div class="dashamount">
+   
+
+
+        Add Money
+      </div>
+
+      
     </div>
 
     
